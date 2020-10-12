@@ -1,7 +1,7 @@
 # App
 
 ## 1. Install NPM packages
-Run `npm install` for a dev server
+Run `npm install` for install
 
 ## 2. Development server
 
