@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <span class="navbar-brand">
+    AppLogo
+  </span>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    (click)="showCollapseNavbar = !showCollapseNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="collapse navbar-collapse"
+    [class.show]="showCollapseNavbar"
+    id="navbarCollapse">
+
+    <ul class="navbar-nav mr-auto">
+      <li
+        *ngIf="user"
+        class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="cameras"
+          routerLinkActive="active">
+          {{"app.header.menu.cameras" | translate}}
+        </a>
+      </li>
+      <li
+        *ngIf="user"
+        class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="reporting"
+          routerLinkActive="active">
+
+          {{"app.header.menu.reporting" | translate}}
+        </a>
+      </li>
+      <li
+        *ngIf="user"
+        class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="settings"
+          routerLinkActive="active">
+
+          {{'app.header.menu.settings' | translate}}
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="javascript:void(0)"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          (click)="isShowDropdown = !isShowDropdown">
+
+          {{getCurrentLang()}}
+        </a>
+        <div
+          class="dropdown-menu"
+          [class.show]="isShowDropdown">
+          <a
+            class="dropdown-item"
+            href="javascript:void(0)"
+            (click)="changeLanguage('en-US')">
+
+            {{locales['en-US']}}
+          </a>
+          <a
+            class="dropdown-item"
+            href="javascript:void(0)"
+            (click)="changeLanguage('ua-UA')">
+
+            {{locales['ua-UA']}}
+          </a>
+        </div>
+      </li>
+    </ul>
+    <form
+      *ngIf="user"
+      class="form-inline mt-2 mt-md-0">
+        <span class="mr-sm-2">
+          {{'app.header.menu.greetings' | translate}}, <strong>{{user.username}}</strong>
+        </span>
+      <button
+        class="btn btn-outline-secondary my-2 my-sm-0"
+        type="button"
+        (click)="logout()">
+
+        {{'app.header.menu.logout' | translate}}
+      </button>
+    </form>
+  </div>
+</nav>

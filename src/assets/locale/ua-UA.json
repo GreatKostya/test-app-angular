@@ -1,0 +1,22 @@
+{
+  "title": "UA TITLE",
+  "app.header.menu.cameras": "Камери",
+  "app.header.menu.reporting": "Звітність",
+  "app.header.menu.settings": "Налаштування",
+  "app.header.menu.greetings": "Вітаю",
+  "app.header.menu.logout": "Вихід",
+
+  "app.footer.text": "Копірайт",
+  "app.footer.theme.dark": "Темна тема",
+  "app.footer.theme.light": "Світла тема",
+
+  "app.login.title": "Увійти",
+  "app.login.form.username.label": "Ім'я користувача",
+  "app.login.form.password.label": "Пароль",
+  "app.login.form.sign-in.button": "Увійти",
+
+  "app.home.title": "Домашня сторінка",
+  "app.cameras.title": "Камери",
+  "app.reporting.title": "Звітність",
+  "app.settings.title": "Налаштування"
+}

@@ -1,0 +1,21 @@
+<h1>
+  {{'app.cameras.title' | translate}}
+</h1>
+
+<div class="row">
+  <div *ngFor="let item of data" class="col-md-4 col-sm-6 col-xs-12 col-xl-2 mt-2">
+    <img
+      class="img-fluid"
+      [src]="item.url"
+      [alt]="item.title">
+
+    <div class="size">
+      <check-status [checked]="item.status == 'PASSED'">
+        {{item.status}}
+      </check-status>
+    </div>
+
+  </div>
+
+</div>
+

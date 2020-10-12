@@ -1,0 +1,7 @@
+<span
+  [class.text-success]="checked"
+  [class.text-danger]="!checked">
+
+  <i [ngClass]="{'fa': true, 'fa-times-circle': !checked, 'fa-check-circle': checked}"></i>
+  <ng-content></ng-content>
+</span>

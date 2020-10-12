@@ -1,0 +1,22 @@
+{
+  "title": "TITLE",
+  "app.header.menu.cameras": "Cameras",
+  "app.header.menu.reporting": "Reporting",
+  "app.header.menu.settings": "Settings",
+  "app.header.menu.greetings": "Hello",
+  "app.header.menu.logout": "Log Out",
+
+  "app.footer.text": "Copyright",
+  "app.footer.theme.dark": "Dark theme",
+  "app.footer.theme.light": "Light theme",
+
+  "app.login.title": "Log In",
+  "app.login.form.username.label": "Username",
+  "app.login.form.password.label": "Password",
+  "app.login.form.sign-in.button": "Sign In",
+
+  "app.home.title": "Home",
+  "app.cameras.title": "Cameras",
+  "app.reporting.title": "Reporting",
+  "app.settings.title": "Settings"
+}

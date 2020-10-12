@@ -1,0 +1,43 @@
+<div style="height: 70vh" class="d-flex flex-column justify-content-center align-content-center">
+  <div class="d-flex align-content-center justify-content-center">
+    <div class="col-md-6 col-sm-12">
+      <form
+        class="form-signin"
+        [formGroup]="form">
+
+        <h1 class="h3 mb-3 font-weight-normal">
+          {{"app.login.title" | translate}}
+        </h1>
+        <label for="inputUsername" class="sr-only">
+          {{'app.login.form.username.label' | translate}}
+        </label>
+        <input
+          id="inputUsername"
+          class="form-control"
+          required=""
+          autofocus=""
+          formControlName="username"
+          [placeholder]="'app.login.form.username.label' | translate">
+
+        <label for="inputPassword" class="sr-only">
+          {{'app.login.form.password.label' | translate}}
+        </label>
+        <input
+          type="password"
+          id="inputPassword"
+          class="form-control mt-1"
+          required=""
+          formControlName="password"
+          [placeholder]="'app.login.form.password.label' | translate">
+
+        <button
+          class="mt-2 btn btn-lg btn-primary btn-block"
+          type="button"
+          (click)="submit()">
+
+          {{'app.login.form.sign-in.button' | translate}}
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

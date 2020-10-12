@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-content-center">
+    <span class="text-muted">
+      {{'app.footer.text' | translate}} 2020
+    </span>
+
+    <div class="form-group">
+      <select
+        class="form-control"
+        id="exampleFormControlSelect1"
+        (change)="applyTheme($event.target.value)">
+
+        <option value="dark-style">
+          {{'app.footer.theme.dark' | translate}}
+        </option>
+        <option value="light-style">
+          {{'app.footer.theme.light' | translate}}
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+
